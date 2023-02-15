@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="header.css">
+    <style>
+        .conten {
+            flex-direction: row;
+            display: flex;
+        }
+        .conten > div {
+            display: flex; 
+            flex: 1; 
+            align-content: center; 
+            justify-content: center;
+        }
+        .form_person {
+            width: 600px;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        .tabel_person {
+            text-align: center;
+            justify-content: center;
+            width: 600px;
+            height: 300px;
+        }
+        .tabel_person 
+            table, th, td {
+                border: 1px solid black;
+        }
+        footer> p{
+            padding: 10px;
+            text-align: center;
+            font-size: 14sp;
+            color: black;
+            border: 1px solid;
+            background-color: white
+        }
+
+    </style>
+    </head>
+    <body>
+        <nav class="container">
+            <img 
+            src="https://assets.website-files.com/61af164800e38c4f53c60b4e/62a6a71f9e327c0716fde5c7_revou%20mc%20logo%20white.png" class="logo" width="100" height="40" />
+
+            <div class="home">Home</div>
+            <div class="search">Search</div>
+            <div class="logout">Logout</div>
+        </nav>
+        <header>
+            <h1>Form Belajar</h1>
+            <p>Ini adalah Website latihan pertama</p>
+           </header>
+        <main class="conten">
+        <div>
+            <form class="form_person">
+            
+               <div class="form_input">
+                    <div
+                        class="form_label">
+                        <label for="nama">Nama</label></div>
+
+                    <div class="form_ttk2">:</div>
+
+                    <div class="form_isi">
+                        <input type="text" id="nama" class="input_form" placeholder="Masukan Nama Anda">
+                </div>
+                </div>
+                <div class="form_input">
+                    <div
+                        class="form_label">
+                        <label for="tgllahir">Tanggal Lahir</label></div>
+
+                    <div class="form_ttk2">:</div>
+
+                    <div class="form_isi">
+                        <input id="tgllahir" type="string" class="input_form" placeholder="Masukan tanggal lahir">
+                </div>
+                </div>
+                <div class="form_input">
+                    <div
+                        class="form_label">
+                        <label for="jeniskelamin">Jenis Kelamin</label></div>
+                        
+                    <div class="form_ttk2">:</div>
+
+                    <div class="form_radio">
+                <input type="radio" id="lakilaki" name="jeniskelamin" value="lakilaki" />
+                    <label for="lakilaki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jeniskelamin" value="perempuan" />
+                    <label for="lakilaki">Perempuan</label>
+                </div>
+                </div>
+                <div class="form_input">
+                    <div
+                    class="form_label">
+                <label for="pesan">Pesan</label></div>
+
+                <div class="form_ttk2">:</div>
+
+                <div class="form_isi">
+                <textarea name="pesan" id="pesan" cols="60" rows="8" placeholder="Pesan"></textarea>
+            </div>
+        </div>
+                <div class="submit">
+                <input type="submit" value="Submit" class="submit">
+                </div>
+            </form>
+        </div>
+        <div>
+            <table class="tabel_person">
+                <tr>
+                    <th>Nama</th>
+                    <th>Tanggal lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Pesan</th>
+                    <th>Profile</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td>Gilang</td>
+                    <td>15 Mei 2001</td>
+                    <td>Laki-laki</td>
+                    <td>sayang kalian</td>
+                    <td><a href="#">Klik disini</a></td>
+                    <td><img src="https://e7.pngegg.com/pngimages/996/941/png-clipart-rubbish-bins-waste-paper-baskets-waste-management-intermodal-container-others-text-rectangle.png" width="20" height="20"></td>
+                </tr>
+            </table>
+        </div>
+        </main>
+
+        <footer class="footer_revo"><
+            <p>RevoU 2023</p>
+        </footer>
+    </body>
+</html>
